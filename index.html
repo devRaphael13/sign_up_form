@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <aside>
+                <img src="assets/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="Sign up image" />
+            </aside>
+            <main>
+                <form action="#">
+                    <h1>Join Us!</h1>
+                    <div>
+                        <input aria-label="First Name" type="text" placeholder="First Name" />
+                        <input aria-label="Last Name" type="text" placeholder="Last Name" />
+                    </div>
+
+                    <div>
+                        <input type="email" aria-label="Email" placeholder="Email" />
+                        <input aria-label="Phone Number" type="tel" placeholder="Phone Number" pattern="[0-9]{11}" />
+                    </div>
+
+                    <div>
+                        <input aria-label="Password" minlength="8" type="password" id="password" placeholder="Password" />
+                        <input aria-label="Confirm password" minlength="8" type="password" id="confirm_password" placeholder="Confirm Password" />
+                    </div>
+                    <small id="matching" class="matching">&nbsp;</small>
+
+                    <button type="submit">Create Account</button>
+                    <small> Already have an account? <a href="#">Log in</a> </small>
+                </form>
+            </main>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
